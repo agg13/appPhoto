@@ -83,5 +83,5 @@ flutter:
 # Dependency added by Arturo G 29/03/2021
 flutter_intl:
   enabled: true
-  main_locale: es_MX
+  main_locale: en
   class_name: S

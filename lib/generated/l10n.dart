@@ -35,7 +35,35 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Photo App`
+  String get appName {
+    return Intl.message(
+      'Photo App',
+      name: 'appName',
+      desc: '',
+      args: [],
+    );
+  }
 
+  /// `Go to page 1`
+  String get goToPage1buttonText {
+    return Intl.message(
+      'Go to page 1',
+      name: 'goToPage1buttonText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Open Camera`
+  String get openCamerabuttonText {
+    return Intl.message(
+      'Open Camera',
+      name: 'openCamerabuttonText',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -43,6 +71,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
 
   List<Locale> get supportedLocales {
     return const <Locale>[
+      Locale.fromSubtags(languageCode: 'en'),
       Locale.fromSubtags(languageCode: 'es', countryCode: 'MX'),
     ];
   }
