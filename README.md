@@ -19,3 +19,8 @@ samples, guidance on mobile development, and a full API reference.
 ## For android
  Change the minimum Android sdk version to 21 (or higher) in your android/app/build.gradle file :
   - minSdkVersion 21
+
+  Add permissions in your android/app/src/main/AdroidManifest.xml:
+  - <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  - <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  - <uses-permission android:name="android.pe

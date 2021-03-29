@@ -27,10 +27,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static m3(myLocale) => "My Locale: ${myLocale}";
 
-  static m4(systemLocales) => "System Locales: \n ${systemLocales}";
+  static m4(randNumGenerated, isPictureOk) => "Generated number: ${randNumGenerated} implies ${isPictureOk}";
+
+  static m5(systemLocales) => "System Locales: \n ${systemLocales}";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "alertDialogPhotoNOKContentText" : MessageLookupByLibrary.simpleMessage("The images does not meet the necessary characteristics"),
+    "alertDialogPhotoNOKTitleText" : MessageLookupByLibrary.simpleMessage("Image Bad Quality"),
+    "alertDialogPhotoOKContentText" : MessageLookupByLibrary.simpleMessage("The image will be saved locally and sent to the API"),
+    "alertDialogPhotoOKTitleText" : MessageLookupByLibrary.simpleMessage("Image Good Quality"),
+    "alertDialogTextOkButton" : MessageLookupByLibrary.simpleMessage("Ok"),
     "appBarTitlePage1Text" : MessageLookupByLibrary.simpleMessage("Store App Info"),
     "appName" : MessageLookupByLibrary.simpleMessage("Photo App"),
     "goToPage1buttonText" : MessageLookupByLibrary.simpleMessage("Go to page 1"),
@@ -39,7 +46,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "infoDirecrotyText" : MessageLookupByLibrary.simpleMessage("\n\t App Directories:"),
     "infoExternalStorageDirectoryText" : m2,
     "infoMyLocalePlaceholders" : m3,
-    "infoSystemLocalesPlaceholders" : m4,
-    "openCamerabuttonText" : MessageLookupByLibrary.simpleMessage("Open Camera")
+    "infoRandomNumberGeneratorText" : m4,
+    "infoSystemLocalesPlaceholders" : m5,
+    "openCamerabuttonText" : MessageLookupByLibrary.simpleMessage("Open Camera"),
+    "savePictureButtonText" : MessageLookupByLibrary.simpleMessage("Save"),
+    "titlePictureDisplayText" : MessageLookupByLibrary.simpleMessage("Picture Captured")
   };
 }

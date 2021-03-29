@@ -1,3 +1,4 @@
+import 'package:app_photo/pagePhoto.dart';
 import 'package:flutter/material.dart';
 import 'package:app_photo/generated/l10n.dart';
 import 'package:app_photo/page1.dart';
@@ -24,6 +25,8 @@ class MyHomePage extends StatelessWidget {
                     context, MaterialPageRoute(builder: (context) => Page1()));
               } else {
                 // open camera
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Photo()));
               }
             },
           )
@@ -45,6 +48,8 @@ class MyHomePage extends StatelessWidget {
               ElevatedButton(
                   onPressed: () {
                     // add code here to open the camera
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Photo()));
                   },
                   child: Text(S.of(context).openCamerabuttonText))
             ],

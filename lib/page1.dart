@@ -6,7 +6,7 @@ import 'package:path_provider/path_provider.dart';
 
 class Page1 extends StatefulWidget {
   @override
-  State createState() => new Page1State();
+  Page1State createState() => new Page1State();
 }
 
 class Page1State extends State<Page1> {

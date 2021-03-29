@@ -134,6 +134,86 @@ class S {
       args: [pathESD],
     );
   }
+
+  /// `Ok`
+  String get alertDialogTextOkButton {
+    return Intl.message(
+      'Ok',
+      name: 'alertDialogTextOkButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Image Bad Quality`
+  String get alertDialogPhotoNOKTitleText {
+    return Intl.message(
+      'Image Bad Quality',
+      name: 'alertDialogPhotoNOKTitleText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The images does not meet the necessary characteristics`
+  String get alertDialogPhotoNOKContentText {
+    return Intl.message(
+      'The images does not meet the necessary characteristics',
+      name: 'alertDialogPhotoNOKContentText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Image Good Quality`
+  String get alertDialogPhotoOKTitleText {
+    return Intl.message(
+      'Image Good Quality',
+      name: 'alertDialogPhotoOKTitleText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The image will be saved locally and sent to the API`
+  String get alertDialogPhotoOKContentText {
+    return Intl.message(
+      'The image will be saved locally and sent to the API',
+      name: 'alertDialogPhotoOKContentText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Picture Captured`
+  String get titlePictureDisplayText {
+    return Intl.message(
+      'Picture Captured',
+      name: 'titlePictureDisplayText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get savePictureButtonText {
+    return Intl.message(
+      'Save',
+      name: 'savePictureButtonText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Generated number: {randNumGenerated} implies {isPictureOk}`
+  String infoRandomNumberGeneratorText(Object randNumGenerated, Object isPictureOk) {
+    return Intl.message(
+      'Generated number: $randNumGenerated implies $isPictureOk',
+      name: 'infoRandomNumberGeneratorText',
+      desc: '',
+      args: [randNumGenerated, isPictureOk],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
