@@ -28,6 +28,12 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  # Dependencies added by Arturo GG 29/03/2021
+  camera: ^0.8.1
+  path_provider: ^2.0.1
+  path: ^1.8.0
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
@@ -74,3 +80,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+# Dependency added by Arturo G 29/03/2021
+flutter_intl:
+  enabled: true
+  main_locale: es_MX
+  class_name: S
