@@ -64,6 +64,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Store App Info`
+  String get appBarTitlePage1Text {
+    return Intl.message(
+      'Store App Info',
+      name: 'appBarTitlePage1Text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Default Locale: {defLocale}`
+  String infoDefaultLocalePlaceholders(Object defLocale) {
+    return Intl.message(
+      'Default Locale: $defLocale',
+      name: 'infoDefaultLocalePlaceholders',
+      desc: '',
+      args: [defLocale],
+    );
+  }
+
+  /// `My Locale: {myLocale}`
+  String infoMyLocalePlaceholders(Object myLocale) {
+    return Intl.message(
+      'My Locale: $myLocale',
+      name: 'infoMyLocalePlaceholders',
+      desc: '',
+      args: [myLocale],
+    );
+  }
+
+  /// `System Locales: \n {systemLocales}`
+  String infoSystemLocalesPlaceholders(Object systemLocales) {
+    return Intl.message(
+      'System Locales: \n $systemLocales',
+      name: 'infoSystemLocalesPlaceholders',
+      desc: '',
+      args: [systemLocales],
+    );
+  }
+
+  /// `\n	 App Directories:`
+  String get infoDirecrotyText {
+    return Intl.message(
+      '\n	 App Directories:',
+      name: 'infoDirecrotyText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `\nPath application document directory: {pathADD}`
+  String infoAppDocumentsDirectoryText(Object pathADD) {
+    return Intl.message(
+      '\nPath application document directory: $pathADD',
+      name: 'infoAppDocumentsDirectoryText',
+      desc: '',
+      args: [pathADD],
+    );
+  }
+
+  /// `\nPath external storage directory: {pathESD}`
+  String infoExternalStorageDirectoryText(Object pathESD) {
+    return Intl.message(
+      '\nPath external storage directory: $pathESD',
+      name: 'infoExternalStorageDirectoryText',
+      desc: '',
+      args: [pathESD],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

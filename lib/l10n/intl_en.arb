@@ -1,5 +1,12 @@
 {
     "appName": "Photo App",
     "goToPage1buttonText": "Go to page 1",
-    "openCamerabuttonText": "Open Camera"
+    "openCamerabuttonText": "Open Camera",
+    "appBarTitlePage1Text": "Store App Info",
+    "infoDefaultLocalePlaceholders": "Default Locale: {defLocale}",
+    "infoMyLocalePlaceholders": "My Locale: {myLocale}",
+    "infoSystemLocalesPlaceholders":"System Locales: \n {systemLocales}",
+    "infoDirecrotyText": "\n\t App Directories:", 
+    "infoAppDocumentsDirectoryText": "\nPath application document directory: {pathADD}", 
+    "infoExternalStorageDirectoryText": "\nPath external storage directory: {pathESD}"
 }
